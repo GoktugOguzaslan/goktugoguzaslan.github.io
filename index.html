@@ -56,6 +56,21 @@
             margin-left: 1px;
             margin-right: 1px;
         }
+        .animated_rainbow_1 {
+    font-size: 42px;
+    font-family: Arial Black, Gadget, sans-serif;
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
     </style>
 }</style>    
         <title>My Life</title>
@@ -74,8 +89,9 @@
             <div class="content d-flex align-items-center">
                 
                 <div id="center" class="container text-center">
-                    <i class="fa-4x"><span style="color:#FF0000">G</span><span style="color:#FF6600">ö</span><span style="color:#FFCC00">k</span><span style="color:#CCFF00">t</span><span style="color:#66FF00">u</span><span style="color:#00FF00">ğ</span> <span style="color:#00FF66">O</span><span style="color:#00FFCC">ğ</span><span style="color:#00CCFF">u</span><span style="color:#0066FF">z</span><span style="color:#0000FF">a</span><span style="color:#6600FF">s</span><span style="color:#CC00FF">l</span><span style="color:#FF00CC">a</span><span style="color:#FF0066">n</span></i>
-                    <h1 style="color:rgb(255, 0, 0); padding-bottom: 6px"> </h1>
+                    <div class="animated_rainbow_1">Göktuğ Oğuzaslan</div>
+
+                      <h1 style="color:rgb(255, 0, 0); padding-bottom: 6px"> </h1>
     
                     <span class="icons">
                         <span id="block"> <!-- Discord -->
@@ -128,4 +144,8 @@
             </script>
 
                    </body>  
+                   <div>
+                    
+    
+                </div>
 </html>
