@@ -8,11 +8,10 @@
 
     body{ 
         background-image: url("doc/mains/Background2.jpg");
-        background-position: center;
+        background-position: fixed;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-color: #000007;
-        background-position: center;
         background-size: cover;
     }
    
@@ -52,12 +51,9 @@
         }
           #hero .content {
             background: rgba(0,0,0,0.75);
-            height: 100%;
-            width: 100%;
-            z-index: 20;
             position: absolute;
-            top: 0;
-            left: 0;
+            left: 0px;
+            top: 0px;
         }
           
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
@@ -121,34 +117,21 @@
                 
         }
 
-/* Siyah Kutu */
-        .KaraKutu{
-            position: fixed;
-            right:    10%;
-            bottom:   0%;        
-			width: 1500px;
-			height: 930px;
-			background-color: black;
-        }
 
 /* Photo Galery "Taken : https://www.w3schools.com/css/css_image_gallery.asp " */
 
         div.gallery {
-            margin: 15px;
-   
+            margin: 100px;
+            width: auto;
             float: left;
-            width: 200px;
+            border: 1px solid rgb(30, 255, 0);
+
         }
 
 
         div.gallery img {
             width: 100%;
             height: auto;
-        }
-
-        div.desc {
-            padding: 150px;
-            text-align: center;
         }
 
         .thumbnail { 
@@ -160,15 +143,20 @@
             -webkit-transition-property: all; 
             -webkit-transition-duration: 0.3s; 
             -webkit-transition-timing-function: ease; 
+
+         
         } 
+
+     
 
 /*change the number below to scale to the appropriate size*/ 
         .thumbnail:hover { 
             
-            transform: scale(4); 
+            transform: scale(1.5); 
 
         }   
 
+   
     </style>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -198,39 +186,53 @@
 
         <div id='hero'>
          
-            <div class="content d-flex align-items-center">
+            <div class="content">
+                        
+                <h1 style="color:rgb(255, 0, 0); padding-bottom: 6px">DÜZELTİLECEK</h1>
+                  
+
+                  <div class="gallery">
+
+
                     
-                <div id="center" class="container text-center">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                   </div>
 
-                
-            
-                   <p style="color:red">:)</p>
-            
-                   <div class="gallery">
-                    <a target="_self" href="/doc/pictures/75210.jpg">
-                      <img src="/doc/pictures/75210.jpg" class='thumbnail'  width="1" height="1">
-                    </a>
-                    <div class="desc"><Selam></div>
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                   </div>
 
                   <div class="gallery">
-                    <a target="_self" href="/doc/pictures/218507.jpg">
-                      <img src="/doc/pictures/218507.jpg" class='thumbnail' width="250" height="500">
-                    </a>
-                    <div class="desc"><Selam></div>
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                   </div>
 
                   <div class="gallery">
-                    <a target="_self" href="/doc/pictures/75210.jpg">
-                      <img src="/doc/pictures/75210.jpg" class='thumbnail' width="500" height="500">
-                    </a>
-                    <div class="desc"><Selam></div>
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                   </div>
-               
-                  <div id="Update" class="update_rainbow_2">
-                    <div class="update_rainbow_2">Last Update : 11.06.2022</div>
-                </div>
+                  
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                  </div>
+
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                  </div>
+                  
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                  </div>
+                  
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                  </div>
+
+                  <div class="gallery">
+                    <iframe src="https://www.instagram.com/p/CeUW4ulo3wp/embed" width="400" height="440"  class='thumbnail' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                  </div>
+                  
+
             </div>
+
 
 
                 <div id="GeriTuşu"class="bottom-Sol">                
@@ -238,7 +240,9 @@
                     
                 </div>
 
-            </div>
+
+                
+            </div>          
         </div>
 
      
@@ -246,7 +250,9 @@
       
 <!----------------------------------------------------------------------------------------  Last Update ------------------------------------------------------------------------------->
  
-          
+            <div id="Update" class="update_rainbow_2">
+                <div class="update_rainbow_2">Last Update : 16.06.2022</div>
+            </div>
                    
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
                                
