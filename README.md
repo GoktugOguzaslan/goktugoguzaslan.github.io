@@ -1,2 +1,2 @@
-# goktugoguzaslan.github.io
+# YeY!
 Herşeyi yapabilirsin :)
