@@ -1,2 +1,2 @@
 # YeY!
-Herşeyi yapabilirsin :)
+Her şeyi yapabilirsin :)
