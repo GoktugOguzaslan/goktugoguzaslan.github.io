@@ -2,79 +2,74 @@
 permalink: /404.html
 ---
 
-
 <!DOCTYPE html>
 <html>
-    
-   
+
     <!--  Türler  -->
-    <style>
-         body {
-            background-image: url("doc/mains/404.jpg");
-            
-            
-   }
-    </style>
+<style>
+    html, body {
 
-    <!--  Main  -->
-    <head>
-        <style>
-            
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+        font-family: 'Oswald', sans-serif;
+    }
 
-        #hero img {
-            height: 100vh;
-            width: 100%;
-            background-position: absolute;
-            z-index: 10;
-            object-fit: cover;
-        }
+    body {
+        background-image: url("doc/mains/404.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
-        #hero .content {
-            background: rgba(0,0,0,0.7);
-            height: 100%;
-            width: 100%;
-            z-index: 20;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 
+    #hero {
+        display: flex; /* Bu satır eklendi */
+        justify-content: center; /* Bu satır eklendi */
+        align-items: center; /* Bu satır eklendi */
+    }
 
-           
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+    #hero .content {
+        background: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex; /* Bu satır eklendi */
+        justify-content: center; /* Bu satır eklendi */
+        align-items: center; /* Bu satır eklendi */
+    }
 
-        #center {
-            font-family: 'PT Sans Narrow', sans-serif;
-        }
+    #center {
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
 
-        #button-text {
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
+    #button-text {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
 
-        #block {
-            margin-left: 3px;
-            margin-right: 3px;
-        }
-     
-        .animated_rainbow_1 {
-    font-size: 42px;
-    font-family: Arial Black, Gadget, sans-serif;
-    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
-    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #0000;
-    background-clip: text;
-}
+    #block {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 
-@keyframes animatedBackground_a {
-    0% { background-position: 0 0 }
-    100% { background-position: -500px 0 }
-}
+    .animated_rainbow_1 {
+        font-size: 42px;
+        font-family: Arial Black, Gadget, sans-serif;
+        background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+        -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #0000;
+        background-clip: text;
+    }
 
-    </style>
-}   
+    @keyframes animatedBackground_a {
+        0% { background-position: 0 0 }
+        100% { background-position: -500px 0 }
+    }
+</style>
         <title>Unknown 404</title>
         <script src="https://kit.fontawesome.com/6f3facabdd.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -83,13 +78,11 @@ permalink: /404.html
     </head>
 
     <!--  2.  -->
-    
-    <body>                  
-        <div id='hero'> 
-            <div class="content d-flex align-items-center">                
+    <body>
+        <div id='hero'>
+            <div class="content d-flex align-items-center">
                 <div id="center" class="container text-center">
-                    <div class="animated_rainbow_1">404 Unknown Place</div>   
-                                  
-               
-                   </body>                   
+                    <div class="animated_rainbow_1">404 Unknown Place</div>
+
+                   </body>
 </html>
