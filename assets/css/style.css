@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg-overlay: rgba(0,0,0,0.55);
+  --accent: #00ff8a;
+  --muted: rgba(255,255,255,0.85);
+  --glass: rgba(255,255,255,0.04);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  color:#fff;
+  background:#000;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero__bg{position:absolute;inset:0;background-image:url('../../doc/mains/LTP.jpg');background-size:cover;background-position:center;filter:saturate(.95) contrast(1);z-index:1}
+.hero__overlay{position:absolute;inset:0;background:var(--bg-overlay);z-index:2;backdrop-filter:blur(4px)}
+.hero__content{position:relative;z-index:3;padding:2rem;max-width:1100px;width:100%}
+
+.hero__title{font-size:clamp(2rem,6vw,4rem);font-weight:700;margin-bottom:.25rem;line-height:1}
+.hero__subtitle{color:var(--muted);margin-bottom:1.25rem;font-weight:400}
+
+/* animated gradient title */
+.hero__title{background:linear-gradient(90deg,#00ffd5,#00aaff,#ff6a9f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;background-size:300% 100%;animation:shift 6s linear infinite}
+@keyframes shift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.links{display:flex;gap:.75rem;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:1.25rem}
+.btn--icon{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:12px;background:var(--glass);color:var(--accent);border:1px solid rgba(255,255,255,0.06);font-size:1.15rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+.btn--icon:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.5)}
+.btn--primary{padding:.5rem 1rem;border-radius:10px;background:linear-gradient(135deg,#00ffa2,#0077ff);color:#001;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem}
+
+.spotify-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:1rem 0}
+.spotify-embed{width:100%;height:180px;border-radius:12px;border:none}
+
+@media (min-width:900px){
+  .spotify-grid{grid-template-columns:repeat(3,1fr)}
+  .spotify-embed{height:200px}
+}
+
+@media (min-width:1200px){
+  .spotify-grid{grid-template-columns:repeat(4,1fr)}
+  .spotify-embed{height:220px}
+}
+
+.last-update{color:#ddd;font-size:.9rem;margin-top:.75rem}
+
+.toast{position:fixed;right:1rem;bottom:1rem;background:#111;color:#fff;padding:.75rem 1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.5);transform:translateY(12px);opacity:0;transition:all .25s ease;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0);pointer-events:auto}
+
+@media (max-width:520px){
+  .hero__title{font-size:2rem}
+  .spotify-embed{height:220px}
+}
